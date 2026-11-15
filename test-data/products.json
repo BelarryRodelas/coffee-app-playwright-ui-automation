@@ -1,0 +1,8 @@
+{
+  "espresso": { "name": "Espresso", "price": 10 },
+  "espressoMacchiato": { "name": "Espresso Macchiato", "price": 12 },
+  "cappuccino": { "name": "Cappuccino", "price": 19 },
+  "mocha": { "name": "Mocha", "price": 8 },
+  "flatWhite": { "name": "Flat White", "price": 18 },
+  "americano": { "name": "Americano", "price": 7 }
+}

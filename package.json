@@ -1,0 +1,27 @@
+{
+  "name": "coffee-cart-playwright",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript UI automation framework for https://coffee-cart.app",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "codegen": "playwright codegen https://coffee-cart.app",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint:sleeps": "node scripts/check-no-sleeps.mjs",
+    "verify": "npm run typecheck && npm run lint:sleeps"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^22.0.0",
+    "dotenv": "^17.0.0",
+    "typescript": "~5.9.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
