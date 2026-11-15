@@ -1,5 +1,6 @@
 import { randomUUID } from 'node:crypto';
 import customersJson from '../../test-data/customers.json';
+import messagesJson from '../../test-data/messages.json';
 import productsJson from '../../test-data/products.json';
 import promoJson from '../../test-data/promo.json';
 import translationsJson from '../../test-data/translations.json';
@@ -10,6 +11,9 @@ export const products: Record<keyof typeof productsJson, Product> = productsJson
 
 /** The "lucky day" offer: an extra discounted item. */
 export const promo: PromoOffer = promoJson;
+
+/** Messages the app writes to the browser console in its test modes (observed on the live app). */
+export const messages: typeof messagesJson = messagesJson;
 
 /** Expected Chinese titles after a double-click (observed on the live app). */
 export const translations: Translation[] = translationsJson;
